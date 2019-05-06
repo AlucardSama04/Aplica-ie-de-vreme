@@ -11,12 +11,14 @@ try:
     latitudine = date['coord']['lat']
     longitudine = date['coord']['lon']
     descriere = date['weather'][0]['description']
-
+    country = date['sys']['country']
+    
     print('Temperatura:', int(temp), 'grade celsius')
     print('Viteza vantului: {}' .format(vitezaVantului))
     print('Latitudine: {}' .format(latitudine))
     print('Longitudine: {}' .format(longitudine))
     print('Descriere: {}' .format(descriere))
+    print('Tara de origine: {}' .format(country))
     
 except:
     print("Oras inexistent sau scris gresit")
